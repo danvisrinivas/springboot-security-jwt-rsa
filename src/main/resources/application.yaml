@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: user-management-application
+  datasource:
+    url: jdbc:mysql://localhost:3306/users?createDatabaseIfNotExist=true
+    username: root
+    password: Danvi@02
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
